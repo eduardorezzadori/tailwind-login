@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-slate-200 h-screen">
-      <main className="flex">
-        <div className="w-1/2 text-gray-950 h-screen flex justify-center items-center">
+      <main className="flex flex-col md:flex-row">
+        <div className="w-full md:w-1/2 text-gray-950 h-screen flex justify-center items-center">
           <form className="flex flex-col w-1/2">
             <div className="w-full flex flex-row justify-around mb-4">
             <Image
@@ -33,7 +33,7 @@ export default function Home() {
             </div>
           </form >
         </div>
-        <div className="bg-blue-500 w-1/2 flex flex-col h-screen justify-center items-center">
+        <div className="bg-blue-500 w-1/2 flex-col h-screen justify-center items-center hidden md:flex">
           <div className="w-1/2">
             <p className="text-2xl ">Domine as técnologias mais buscadas pelo mercado!</p>
             <Image
